@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>High Voltages - MQTT</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script>
+      <script src="demo.js" type="text/javascript"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <h1 id="Main_heading"> <b>High Voltages MQTT Dashboard</b></h1><br><br>
+         <form id="connection-information-form">
+            <b>Hostname or IP Address and Port Number:</b> 
+            <input id="host" type="text" name="host" placeholder="broker address">
+            
+            <input id="port" type="text" name="port" value="8080"><br>
+            <b>Username and Password:</b>
+            <input id="username" type="text" name="Username" placeholder="Username"><br>
+           
+            <input id="password" type="password" name="password" placeholder="password"><br>
+            <b>Subscription topic:</b>
+            <input id="topic_s" type="text" name="topic_s" value="#"><br><br>
+            <input type="button" onclick="startConnect()"  value="Connect">
+            <input type="button"  onclick="startDisconnect()" value="Disconnect"> <br>
+            <br><b>Publish Topic and Message:</b>
+            <input id="topic_p" type="text" name="topic_p" placeholder="Publish topic">
+            
+            <input id="Message" type="text" name="message"  placehilder="Message">
+            <input type="button" onclick="publishMessage()" value="Publish">
+         </form>
+         <div id="messages"></div>
+      </div>
+   </body>
+</html>

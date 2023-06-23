@@ -9,6 +9,8 @@ function startConnect(){
 
     document.getElementById("messages").innerHTML += "<span> Connecting to " + host + "on port " +port+"</span><br>";
     document.getElementById("messages").innerHTML += "<span> Using the client Id " + clientID +" </span><br>";
+     var client = new Paho.MQTT.Client("wss://" + host, Number(port), clientID);
+
 
     client = new Paho.MQTT.Client(host,Number(port),clientID);
 

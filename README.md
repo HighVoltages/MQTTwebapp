@@ -2,6 +2,8 @@
 
 
 In this tutorial, you will learn how you can implement mqtt using websockets in browser. This concept will help you build we application using mqtt.
+
+Watch video on youtube.
 [![MQTT web app](https://i0.wp.com/highvoltages.co/wp-content/uploads/2022/11/ESP8266-RASPBERRY-PI-WIRELESS-COMMUNICATION.webp?resize=1024%2C576&ssl=1)](https://youtu.be/rlnhd67PV-M)
 
 Also if you want to read the steps , go to:
